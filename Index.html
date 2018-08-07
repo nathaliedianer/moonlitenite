@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-i=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+<header>
+    <!-- navigation -->
+    <nav>
+        <a href="#" class="menu">Menu</a>
+    <ul>
+        <li>Contact</li>
+        <li>Locations</li>
+        <li>Featured</li>
+        <li>Shop</li>
+        <p class="logo">MOONLITENITE&#8482;</p>
+    </ul>
+
+    </nav>
+    </header>
+    <!-- / navigation end -->
+
+
+
+    <!-- moon image background -->
+
+    <div class="alert">
+            <h1>Alert!</h1>
+            <a href="#" class="close_btn"><i class="fa fa-2x fa-times"></i></a>
+        </div>
+
+    <div class="product">
+        <div class="contain-prod">
+        <img src="moon-lamp.jpg" class="moon-hand"/> 
+    <!-- / end image background -->
+        <!-- zoom icon on top left -->
+        <img src="zoom.png" class="zoom">
+        </div>
+    <!-- images inside product -->
+        <div class="example-images">
+            <div class="row">
+                <div class="column">
+                    <img src="deskmoon.jpg" alt="desk moon Lamp" class="sample">
+                </div>
+                <div class="column">
+                    <img src="whitemoon.jpg" alt="Forest" class="sample">
+                </div>
+                <div class="column">
+                    <img src="fourmoons.jpg" alt="Mountains" class="sample">
+                </div>
+            </div> 
+        </div>
+        </div>
+                <!-- /images contained -->
+
+     <!-- Product description--> 
+        <div class="textbox">
+            <a href="#">
+        <h1 class="product-name">Moon Lamp </h1></a>
+            <div class="line">
+                <p id="vertical" class="description">Rendered 3D Model of Moon</p>
+             
+                <p class="description">Manually Change Colors</p>
+                
+                <p class="description">Includes Charger & Night Stand</p>
+                
+                <p class="description">14 Hour Battery Life</p>
+
+                <p class="description">Three Year Warranty</p>
+<div class="container">
+    <p class="shopping">
+        <span>Added to Cart !</span>
+                <button>Add to Cart</button>
+
+                <!--  LEAVE OUT FOR NOW
+                                    <div class="price">$22.99
+                    <p class="shipping">Free Shipping</p>
+                </div>
+                <!--  -->
+                </p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+<footer>
+
+</footer>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+
+<!-- why isnt this working -->
+
+$(document).ready(function() {
+  console.log( 'ready!' );
+});
+
+$('.product-name').click(function(){
+    $('.textbox').animate({left:'250px'});
+});
+
+  if ($(window).width() > 786) {
+    $('.alert').hide().delay(750).slideDown(400);
+  };
+  $('.close_btn').click(function() {
+    $('.close_btn').fadeOut(200);
+    $('.alert').slideUp(400);
+  });
+
+
+$('.shopping span').hide();
+
+
+$('.shopping button').click(function(){
+
+    $('.shopping span').show();
+
+    $('.shopping button').hide();
+
+    $('.price').hide();
+
+
+
+});
+
+$(function(){
+
+$('.menu').click(function(){
+
+$('ul').toggle();
+
+<!-- why... -->
+
+});
+
+});
+
+</script>
+</body>
+</html>
